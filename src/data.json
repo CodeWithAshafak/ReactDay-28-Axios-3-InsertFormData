@@ -1,0 +1,67 @@
+{
+  "student": [
+    {
+      "name": "ashafak",
+      "course": "MERN",
+      "fee": 45000,
+      "contact": 9090909090,
+      "id": "e59a"
+    },
+    {
+      "name": "ashafak",
+      "course": "MERN",
+      "fee": 45000,
+      "contact": 9090909090,
+      "id": "449b"
+    },
+    {
+      "id": "03bd",
+      "name": "Ashafak Altaf Astanwale",
+      "course": "MERN",
+      "fee": "1232322",
+      "contact": "8698468448"
+    },
+    {
+      "id": "385f",
+      "name": "nitya ",
+      "course": "beautiparlor",
+      "fee": "1200000",
+      "contact": "8987654534"
+    },
+    {
+      "id": "d9a1",
+      "name": "Farah khan",
+      "course": "MBBS ",
+      "fee": "180000",
+      "contact": "7675747372"
+    },
+    {
+      "id": "978b",
+      "name": "Aslam shaikh ",
+      "course": "Aviation pilot",
+      "fee": "780000",
+      "contact": "9087653457"
+    },
+    {
+      "id": "a0df",
+      "name": "Aslam shaikh ",
+      "course": "Aviation pilot",
+      "fee": "780000",
+      "contact": "9087653457"
+    },
+    {
+      "id": "17e3",
+      "name": "",
+      "course": "",
+      "fee": "",
+      "contact": ""
+    },
+    {
+      "id": "d004",
+      "name": "Dolly chaiwala",
+      "course": "Chai specialazation diploma",
+      "fee": "1000",
+      "contact": "7777709999"
+    }
+  ]
+}
