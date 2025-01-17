@@ -1,20 +1,6 @@
 {
   "student": [
     {
-      "name": "ashafak",
-      "course": "MERN",
-      "fee": 45000,
-      "contact": 9090909090,
-      "id": "e59a"
-    },
-    {
-      "name": "ashafak",
-      "course": "MERN",
-      "fee": 45000,
-      "contact": 9090909090,
-      "id": "449b"
-    },
-    {
       "id": "03bd",
       "name": "Ashafak Altaf Astanwale",
       "course": "MERN",
@@ -44,17 +30,10 @@
     },
     {
       "id": "a0df",
-      "name": "Aslam shaikh ",
-      "course": "Aviation pilot",
+      "name": "Rahul Sharma",
+      "course": "Devops engineer",
       "fee": "780000",
       "contact": "9087653457"
-    },
-    {
-      "id": "17e3",
-      "name": "",
-      "course": "",
-      "fee": "",
-      "contact": ""
     },
     {
       "id": "d004",
@@ -62,6 +41,34 @@
       "course": "Chai specialazation diploma",
       "fee": "1000",
       "contact": "7777709999"
+    },
+    {
+      "id": "5a8a",
+      "name": "Shifa ",
+      "course": "Blockchain Developer",
+      "fee": "18000",
+      "contact": "9076543567"
+    },
+    {
+      "id": "6c0e",
+      "name": "Praniti chouhan",
+      "course": "MERN",
+      "fee": "909090",
+      "contact": "9090909090"
+    },
+    {
+      "id": "dc92",
+      "name": "nitya ",
+      "course": "engineer",
+      "fee": "12999011",
+      "contact": "234234"
+    },
+    {
+      "id": "b739",
+      "name": "Nagma  j",
+      "course": "MBBS",
+      "fee": "190000",
+      "contact": "7869033373"
     }
   ]
 }

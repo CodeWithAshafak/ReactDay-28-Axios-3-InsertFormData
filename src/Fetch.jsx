@@ -60,7 +60,10 @@ let [jsondata,setData]= useState([])
         <td>{key.course}</td>
         <td>{key.fee}</td>
         <td>{key.contact}</td>
+      
+
         <td><button onClick={()=>{deletefun(key.id)}}>Delete</button></td>
+        <td><button onClick={()=>{setfrmvisible(true),setEditdata(key)}}>Edit</button></td>
       </tr>
     )
   })
@@ -81,8 +84,18 @@ let [jsondata,setData]= useState([])
   
  
  
+//edit :- 
+  let [frmvisible,setfrmvisible] = useState(false); //to show the form
+  let [editdata,setEditdata]= useState({})
+  function hinput(key){
+    let {name,value} = key.target;
+    setEditdata({...editdata,[name]:value})
+  }
+ let finalSubmit = (e)=>{
+  e.preventDefault();
+  axios.put(`http://localhost:3000/student/${editdata.id}`,editdata).then(r=>alert("updated"))
 
- 
+ }
 
   return (
   <>  
@@ -95,6 +108,8 @@ let [jsondata,setData]= useState([])
         <th>Course</th>
         <th>Fee</th>
         <th>Contact</th>
+        <th>Delete</th>
+        <th>Edit</th>
       </tr>
 
      {result}
@@ -110,11 +125,40 @@ let [jsondata,setData]= useState([])
       Course : <input type="text" name='course' value={input.cou}   onChange={addData}  /> <br />
       Fee    : <input type="text" name='fee'   value={input.fe}   onChange={addData}    /> <br />
       Contact : <input type="text" name='contact'  value={input.con}    onChange={addData}  /> <br />
+
  
       <input type="submit" />
       </form>
+
+
+
+
+      {/* Edit FORM */}
+      {frmvisible && (
+        <form onSubmit={finalSubmit}>
+       <label htmlFor="">id</label>
+          <input type="text" name='id' onChange={hinput}  value={editdata.id} readOnly />
+
+          <label htmlFor="">name</label>
+          <input type="text" name='name' onChange={hinput}  value={editdata.name}/>
+
+          <label htmlFor="">course</label>
+          <input type="text" name='course' onChange={hinput}  value={editdata.course}/>
+   
+          <label htmlFor="">fee</label>
+          <input type="text" name='fee' onChange={hinput}  value={editdata.fee}/>
+
+          <label htmlFor="">contact</label>
+          <input type="text" name='contact' onChange={hinput}  value={editdata.contact}/>
+
+          <input type="submit"  />
+
+        </form>
+      )}
     </center>
-  
+    
+
+
   </>
   )
 }
